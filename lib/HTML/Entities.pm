@@ -151,7 +151,8 @@ require Exporter;
 $VERSION = "3.68";
 sub Version { $VERSION; }
 
-require HTML::Parser;  # for fast XS implemented decode_entities
+# Gonéri -- HTML::Parser as an XS dep and is not required
+#require HTML::Parser;  # for fast XS implemented decode_entities
 
 
 %entity2char = (
